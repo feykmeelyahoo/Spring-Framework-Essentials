@@ -15,15 +15,15 @@ public class RunDemo {
         Team redSox = context.getBean("redSox", Team.class);
         Team cubs = context.getBean("cubs", Team.class);
 
-        game.setHomeTeam(royals);
-        game.setAwayTeam(cubs);
+//        game.setHomeTeam(royals);
+//        game.setAwayTeam(cubs);
 //        game.playGame();
         System.out.println(game.playGame());
 
-        game.setHomeTeam(cubs);
-        game.setAwayTeam(redSox);
+//        game.setHomeTeam(cubs);
+//        game.setAwayTeam(redSox);
 //        game.playGame();
-        System.out.println(game.playGame());
+//        System.out.println(game.playGame());
 
         context.close();
     }
