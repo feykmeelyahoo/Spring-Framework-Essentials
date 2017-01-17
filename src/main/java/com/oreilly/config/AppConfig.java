@@ -15,27 +15,27 @@ import org.springframework.context.annotation.Import;
 /**
  * Created by innuendo on 15/01/2017.
  */
-@Configuration
-@ComponentScan(basePackages = "com.oreilly")
-public class AppConfig {
+//@Configuration
+//@ComponentScan(basePackages = "com.oreilly")
+//public class AppConfig {
 
-	@Autowired
-	private DataSource dataSource;
-
-	@Resource
-	private Team redSox;
-
-	@Qualifier("cubs")
-	@Autowired
-	private Team cubs2;
-
-	@Bean
-	public Game game() {
-		BaseballGame baseballGame= new BaseballGame(redSox, cubs2);
-		baseballGame.setDataSource(dataSource);
-		
-		return baseballGame;
-	}
+//	@Autowired
+//	private DataSource dataSource;
+//
+//	@Resource
+//	private Team redSox;
+//
+//	@Qualifier("cubs")
+//	@Autowired
+//	private Team cubs2;
+//
+//	@Bean
+//	public Game game() {
+//		BaseballGame baseballGame= new BaseballGame(redSox, cubs2);
+//		baseballGame.setDataSource(dataSource);
+//
+//		return baseballGame;
+//	}
 
 //	@Bean
 //	public Team redSox() {
@@ -51,4 +51,4 @@ public class AppConfig {
 //	public Team royals() {
 //		return new Royals();
 //	}
-}
+//}
